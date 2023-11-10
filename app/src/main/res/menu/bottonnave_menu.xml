@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/menuburguer"
+        android:title="" />
+
+    <item
+        android:id="@+id/menupaw"
+        android:icon="@drawable/paw"
+        android:title="" />
+
+    <item
+        android:id="@+id/data"
+        android:icon="@drawable/datatime"
+        android:title="" />
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/person"
+        android:title="" />
+
+</menu>

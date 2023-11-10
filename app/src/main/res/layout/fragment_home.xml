@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DCE1CEF3"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnchat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="chat"
+                android:src="@drawable/chat" />
+
+            <ImageButton
+                android:id="@+id/btnnoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="notificacao"
+                android:src="@drawable/bell" />
+
+            <ImageButton
+                android:id="@+id/btnperf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="menu"
+                android:src="@drawable/menuburguer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="perfil"
+                android:src="@drawable/icon_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Olá, Doguinho!"
+                android:textSize="18sp" />
+
+
+            <ImageButton
+                android:id="@+id/btnmais"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:contentDescription="+"
+                android:src="@drawable/angulo" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="270dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="135dp"
+            android:background="#A455EB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="localização"
+                app:boxBackgroundColor="#fff"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="30dp"
+                app:boxCornerRadiusBottomStart="30dp"
+                app:boxCornerRadiusTopEnd="30dp"
+                app:boxCornerRadiusTopStart="30dp"
+                app:boxStrokeColor="#090A0E">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/search_maps"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:hint="Minha Localização"
+                    android:maxLength="100"
+                    android:padding="20dp"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Ei,"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Para onde vamos?"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="202dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="360dp"
+            android:background="#A455EB" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:rotationX="5"
+
+                app:cardCornerRadius="50dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_margin="20dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btndogwalker"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#00FFFFFF"
+                        android:contentDescription="dogwalker"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dogwalke" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="75dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="DogWalkers"
+                        android:textColor="#CD945D"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="290dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="600dp"
+            android:background="#A455EB"
+            />
+
+        <HorizontalScrollView
+            style="@android:style/Widget.DeviceDefault.HorizontalScrollView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="610dp"
+            android:layout_marginBottom="100dp"
+            android:contentDescription="scroll"
+            android:gravity="center"
+            android:rotationX="5">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="500dp"
+                    android:backgroundTint="#fff"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/publiii" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#fff"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/publii" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#fff"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="50dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/publi" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </FrameLayout>
+
+</ScrollView>

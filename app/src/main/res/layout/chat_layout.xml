@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DCE1CEF3">
+
+        <ImageButton
+            android:id="@+id/btnvoltar"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="chat"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_menu"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="notificacao"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menuburguer"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="menu"
+            android:layout_marginLeft="215dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="mensagem"
+            app:boxBackgroundColor="#DCE1CEF3"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="30dp"
+            app:boxCornerRadiusBottomStart="30dp"
+            app:boxCornerRadiusTopEnd="30dp"
+            app:boxCornerRadiusTopStart="30dp"
+            app:boxStrokeColor="#090A0E"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtimbox"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:drawableRight="@drawable/send"
+                android:hint="Mensagem"
+                android:maxLength="100"
+                android:padding="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout>

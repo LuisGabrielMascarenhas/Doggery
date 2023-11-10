@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366988236577",
+    "project_id": "doggery-f72aa",
+    "storage_bucket": "doggery-f72aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366988236577:android:e8d82c38f03fc944145060",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5mlXs9VXLWAkXTnDIcdDfndjsVOKqgdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
